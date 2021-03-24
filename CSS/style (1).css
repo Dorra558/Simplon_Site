@@ -1,0 +1,149 @@
+/* *****Déclaration des variables******************* */
+
+:root {
+    --principal_color: #A4082F;
+}
+
+body {
+    background-image: url(/imgs/bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #F1F5F8;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* ***************top bar */
+
+
+/*****a prorops*******/
+.pro2{ 
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 400px;
+}
+
+
+.pro1 h1{ 
+    margin-left: 90px;
+    color: var(--principal_color);
+}
+.pro1 p{ 
+    margin-left:90px;
+}
+.gallery{ 
+    
+     display: flex;
+}
+
+.mob1 img{ 
+    filter: grayscale(100%);
+   margin-right:0px;
+    width:600px;
+    height:450px;
+}
+.mob1 img:hover{ 
+    filter: grayscale(0%);
+}
+.mob2 img{ 
+    filter: grayscale(100%);
+    display: block;
+    margin-left:150px;
+width:380px;
+height:235px;
+padding-bottom: 20px;
+}
+.mob2 img:hover{ 
+    filter: grayscale(0%);
+}
+.dis{ 
+    display:flex;
+ padding-left:80px;
+ 
+text-align:justify;
+ 
+    height:350px;
+}
+.dis h3{ 
+    color:#A4082F;
+}
+.res{ 
+     display: flex;
+     margin-left:40px;
+     margin-right:70px;
+    
+}
+.res img{ 
+   
+padding:20px;
+    text-align: center;
+   margin: 0px;
+   padding-bottom:20px;
+    width:330px;
+    height:250px;
+}
+.res h3{ 
+    color:var(--principal_color);
+}
+.qui h1{
+   
+    color:#A4082F;
+}
+.qui p{ 
+    margin-bottom: 50px;
+    margin-top:50px;
+   padding-right:200px;
+    margin-left:10px;
+    
+}
+@media only screen and (max-width: 375px) {
+  .gallery{
+    display: block;
+    justify-content:center;
+   
+  }
+  .pro2{
+      display: block;
+      margin-bottom: 50px;
+  }
+  
+  .dis{ 
+      padding-left:10px;
+  }
+  .qui p{ 
+      text-align: center;
+     padding-right:0px;
+      
+  }
+
+
+  .pro1 p{ 
+   margin-left: 30px;
+  }
+ 
+  
+ .mob1 img{ 
+     width:360px;
+     height:250px;
+ }
+  
+  .mob2{
+      margin-top:20px;
+    margin-left:-150px;
+   
+  }
+  .res{ 
+      text-align: justify;
+      margin-left:10px;
+      padding-top:150px;
+    display: block;
+}
+.mob2 img{
+    width:360px;
+
+}
+}
+

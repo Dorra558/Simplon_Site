@@ -1,0 +1,405 @@
+/*section formation--------------------------------------------------*/
+
+.backImge {
+    width: 100%;
+    height: 57vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imgs/BackFormation.JPG');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#testimonials {
+    margin-top: 5%;
+}
+
+.titretem h4 {
+    font-size: 11px;
+    color: #ce0033;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.temoignage {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.lign {
+    margin-top: 5px;
+    background-color: #ce0033;
+    height: 5px;
+    width: 16.5%;
+}
+
+
+/*formation*/
+
+.intro-formation {
+    padding: 0;
+    margin: 0;
+    background-image: url(../imgs/bg.jpg);
+}
+
+.marge-title {
+    padding-bottom: 20%;
+}
+
+.intro-formation a {
+    text-decoration: none;
+    color: black;
+}
+
+.horizantal-lign {
+    background-color: #ce0033;
+    height: 5px;
+    width: 50px;
+    margin-left: 47%;
+    margin-top: 10%;
+}
+
+.titresimplon {
+    font-size: 40px;
+    margin-top: 1%;
+}
+
+.littlesimplon {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 0;
+    padding: 1% 20%;
+    margin-bottom: 5%;
+}
+
+
+/*button animation-----------*/
+
+.lire-button {
+    margin-left: 45%;
+    text-decoration: none;
+    position: relative;
+    background: #fbfaff;
+    color: black;
+    border: 1px dotted #ce0033;
+    padding: 0.5rem 2rem;
+    outline: none;
+    box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.053), 0 2.9px 4.3px rgba(0, 0, 0, 0.073), 0 5.1px 7.7px rgba(0, 0, 0, 0.084), 0 8.5px 12.8px rgba(0, 0, 0, 0.095), 0 14px 21.2px rgba(0, 0, 0, 0.109), 0 24.5px 37px rgba(0, 0, 0, 0.135), 0 53px 80px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.lire-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background: #ce0033;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.lire-button:hover::after {
+    transform: scale(1, 1);
+}
+
+
+/*-----section formation-----------------------------------------------------------------------------------------------*/
+
+.section-formation {
+    background-image: url(../imgs/background2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+.macbook-simplon {
+    height: 70vh;
+    width: 110vh;
+    margin-top: 4%;
+}
+
+#form-text {
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-top: 10%;
+}
+
+#form-text p {
+    line-height: 24px;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+#form-text p span {
+    word-spacing: 10px;
+    height: 10px;
+    width: auto;
+    background-color: #ce0033;
+    color: #fff;
+}
+
+
+/* future metier-----------------------------------------------------------------------------------------------------------*/
+
+
+/*titre de metier*/
+
+.verti {
+    height: 50px;
+    width: 3px;
+    margin-top: 5%;
+    background-color: #ce0033;
+    margin-left: 50%;
+}
+
+.ttt h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    margin-top: 2%;
+    color: black;
+}
+
+.ttt p {
+    color: #ce0033;
+    font-weight: bold;
+}
+
+
+/*contenue de metier*/
+
+.section-bg-metier {
+    color: black;
+    padding: 5% 0;
+}
+
+.single-job {
+    box-shadow: inset -2px -2px 8px rgb(201, 201, 201), inset -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.single-job .job-thumb {
+    margin-bottom: 20px;
+}
+
+.job-thumb img {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.single-job .job-title {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.single-job .job-title h3 {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.single-job:hover {
+    box-shadow: -2px -2px 8px rgb(201, 201, 201), -2px -2px 12px rgba(255, 255, 255, 0.1), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(255, 255, 255, 0.15);
+}
+
+
+/*---pedaogie-------------------------------------------------------------------------------------*/
+
+#Satisfaction {
+    margin-top: 5%;
+}
+
+.titresatis h4 {
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.temoi {
+    margin-bottom: 8%;
+    margin-top: 4%;
+    text-align: justify;
+    font-size: 35px;
+}
+
+.lign2 {
+    margin-top: 5px;
+    background-color: #fff;
+    height: 3px;
+    width: 16.5%;
+}
+
+#pedagogie {
+    color: #fff;
+    margin-top: 6%;
+    background-image: linear-gradient(rgba(204, 0, 51, 0.95), rgba(204, 0, 51, 0.95)), url('../imgs/bgmetier.jpg');
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
+
+#pedagogie p {
+    margin-top: 20%;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.button-predagogie {
+    margin-left: 11%;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0 40px 5px 40px;
+}
+
+.button-predagogie :hover {
+    color: #fff;
+}
+
+
+/*nos mission---------------------------------------------------------------------*/
+
+#services {
+    padding: 100px 0;
+}
+
+.wrapper {
+    display: grid;
+    margin: 100px 90px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.wrapper .box {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+.wrapper .box .front-face {
+    background-color: rgb(253, 253, 253);
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+}
+
+.box .front-face .icon {
+    height: 80px;
+}
+
+.box .front-face .icon i {
+    font-size: 65px;
+}
+
+.box .front-face span,
+.box .back-face span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .front-face .icon i,
+.box .front-face span {
+    background: linear-gradient(-135deg, #b80303, #ce0033);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box .back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f8f8f8;
+    z-index: 1;
+    height: 220px;
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+    opacity: 0;
+    backface-visibility: hidden;
+    background: linear-gradient(-135deg, #b80303, #ce0033);
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5s ease;
+}
+
+.box .back-face p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box:hover .back-face {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.box:hover .front-face {
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+
+
+/*-----testimonials---------------------------------------------------------------------------------------------------------------------*/
+
+.titretest h4 {
+    font-size: 11px;
+    color: #ce0033;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.lign3 {
+    margin-top: 5px;
+    background-color: #ce0033;
+    height: 5px;
+    width: 16.5%;
+}
+
+#testimonials {
+    padding: 20px 0;
+}
+
+#testimonials h1 {
+    margin-top: 5%;
+}
+
+.testimonials video {
+    padding: 0;
+    margin-top: 50px;
+    border: 2px solid #cc0033;
+    border-radius: 15px;
+    outline: none;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 341px) {
+    .littlesimplon {
+        text-align: justify;
+        padding: 0px;
+    }
+    .lire-button {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: 20%;
+    }
+    .macbook-simplon {
+        height: 80vh;
+        width: 100;
+        margin-top: 4%;
+    }
+    .espace {
+        margin-top: 120%;
+        width: 100%;
+    }
+}

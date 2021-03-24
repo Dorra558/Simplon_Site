@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/defult.css">
+    <link rel="shortcut icon" href="img/blogger_favicon.png">
+</head>
+<body>
+<!-- =========================================================================================== -->
+<!--     Start Navbar    -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+        <a href="index.html" class="navbar-brand font-weight-bold font-italic">Simplon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                 <li class="nav-item px-2">
+                   <a class="nav-link active" href="index.html">Tableau de bord</a>
+                 </li>
+                 <li class="nav-item px-2">
+                   <a class="nav-link" href="posts.html">Formations</a>
+                 </li>
+                 <li class="nav-item px-2">
+                   <a href="categories.html" class="nav-link">Formateurs</a>
+                 </li>
+                 <li class="nav-item px-2">
+                   <a href="users.html" class="nav-link">Utilisateurs</a>
+                 </li>
+           </ul>
+           
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item dropdown mr-3">
+                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                       <i class="fas fa-user"></i>Bienvenue
+                   </a>
+                       <div class="dropdown-menu">
+                           <a href="profile.html" class="dropdown-item">
+                               <i class="fas fa-user-circle"></i> Profil
+                           </a>
+                           <a href="settings.html" class="dropdown-item">
+                               <i class="fas fa-cog"></i> Réglage
+                           </a>
+                       </div>
+                </li>
+               
+               <li class="nav-item">
+                   <a href="login.html" class="nav-link">
+                       <i class="fas fa-user-times"></i> 
+                       Se déconnecter
+                   </a>
+               </li> 
+           </ul>
+        </div>
+    </div>   
+ </nav>
+   <!--     End Navbar    -->
+<!-- =========================================================================================== -->
+    <!--     Start Header    -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Première formation</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!--     End Header    -->
+<!-- =========================================================================================== -->
+<!-- =========================================================================================== -->
+    <!--     Start Action    -->
+    <section id="action" class="py-4 mb-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html" class="btn btn-light btn-block">
+                        <i class="fas fa-arrow-left"></i> Retour à tableau de bord
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html" class="btn btn-success btn-block">
+                        <i class="fas fa-check"></i> Enregistrer les modifications
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html" class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i> Supprimer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!--     End Header    -->
+<!-- =========================================================================================== -->
+<!--     Start Details    -->
+    <section id="details">
+        <div class="container">
+            <div class="row">
+               <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Modifier</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="title">Titre</label>
+                                <input type="text" class="form-control" value="Titre">
+                              </div>
+
+                             <div class="form-group">
+                                <label for="category">Formation</label>
+                                <select class="form-control">
+                                    <option value="" selected>Développement web</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Télécharger Image</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image">
+                                    <label for="image" class="custom-file-label">Choisir fichier</label>
+                                </div>
+                                <small class="form-text text-muted">Taille maximale 3 Mo</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="body">Texte</label>
+                                <textarea name="editor1" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, obcaecati ea recusandae ipsum blanditiis labore exercitationem aut harum delectus eveniet quasi, alias aspernatur dolor natus possimus eaque modi. Accusantium, voluptatum?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, obcaecati ea recusandae ipsum blanditiis labore exercitationem aut harum delectus eveniet quasi, alias aspernatur dolor natus possimus eaque modi. Accusantium, voluptatum?</textarea>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+    </section>
+<!--     End POST    -->
+<!-- =========================================================================================== -->
+<!-- Start FOOTER -->
+    <footer id="main-footer" class="bg-dark text-white mt-3 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                         &copy;Copyright <span id="year"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- End FOOTER -->
+
+<!-- =========================================================================================== -->
+   
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

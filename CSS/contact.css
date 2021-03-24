@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    top: 2rem;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+.empty {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    min-height: 110vh;
+}
+
+.content section {
+    margin-top: 8vh;
+    margin-left: 20vh;
+}
+
+.content-form {
+    margin-top: 7rem;
+}
+
+.form {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.form .contact-form input {
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .contact-form input~span {
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 10px;
+}
+
+.form .contact-form input:focus~span {
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form textarea {
+    width: 30rem;
+    border: 0px;
+    padding: 5%;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+}
+
+.form .contact-form textarea~span {
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.9s ease-in-out;
+}
+
+.form .contact-form textarea:focus~span {
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form input[type=submit] {
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    width: 30%;
+    height: 40px;
+    margin-top: -5px;
+    padding: 1%;
+    float: right !important;
+}
+
+.media {
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+
+.media li {
+    margin: 20px 30px;
+}
+
+.d-flex h2 {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-repeat: repeat-y;
+        overflow: auto;
+    }
+    header {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        width: 100%;
+    }
+    .empty {
+        height: 210vh;
+    }
+    .form {
+        position: absolute;
+        top: 100vh;
+        margin-left: 10%;
+    }
+    .content-form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        margin-top: 53vh;
+        margin-left: 10vh;
+    }
+    .content section {
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    .media {
+        position: absolute;
+        top: 190vh;
+        right: 30px;
+    }
+}
+
+
+/**footer**/
+
+
+/* Main Footer */
+
+footer .main-footer {
+    padding: 20px 0;
+    background: rgb(34, 30, 30);
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* Copy Right Footer */
+
+.footer-copyright {
+    background: rgb(34, 30, 30);
+    padding: 5px 0;
+}
+
+.footer-copyright .logo {
+    display: inherit;
+}
+
+.footer-copyright nav {
+    float: right;
+    margin-top: 5px;
+}
+
+.footer-copyright nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright nav ul li {
+    border-left: 1px solid white;
+    display: inline-block;
+    line-height: 12px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.footer-copyright nav ul li a {
+    color: white;
+}
+
+.footer-copyright nav ul li:first-child {
+    border: medium none;
+    padding-left: 0;
+}
+
+.footer-copyright p {
+    color: white;
+    margin: 2px 0 0;
+}
+
+
+/* Footer Top */
+
+.footer-top {
+    background: grey;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
+}
+
+
+/* Footer transparent */
+
+footer.transparent .footer-top,
+footer.transparent .main-footer {
+    background: transparent;
+}
+
+footer.transparent .footer-copyright {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/* Footer light */
+
+footer.light .footer-top {
+    background: #f9f9f9;
+}
+
+footer.light .main-footer {
+    background: #f9f9f9;
+}
+
+footer.light .footer-copyright {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+}
+
+
+/* Footer 4 */
+
+.footer- .logo {
+    display: inline-block;
+}
+
+
+/*==================== 
+	Widgets 
+====================== */
+
+.widget {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.widget.widget-last {
+    margin-bottom: 0px;
+}
+
+.widget.no-box {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.widget.subscribe p {
+    margin-bottom: 18px;
+}
+
+.widget li a {
+    color: white;
+    font-size: 15px;
+}
+
+.widget li a:hover {
+    color: #ce0033;
+}
+
+.widget-title {
+    margin-bottom: 20px;
+}
+
+.widget-title span {
+    background: #839FAD none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+}
+
+.widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    top: -4px;
+    width: 50%;
+}
+
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.widget .badge {
+    float: right;
+    background: #7f7f7f;
+}
+
+.typo-light h1,
+.typo-light h2,
+.typo-light h3,
+.typo-light h4,
+.typo-light h5,
+.typo-light h6,
+.typo-light div,
+.typo-light span,
+.typo-light small {
+    color: #ce0033;
+    font-size: 18px;
+}
+
+.typo-light p {
+    color: white;
+    font-size: 18px;
+}
+
+.typo-light p:hover {
+    color: #ce0033;
+}
+
+ul.social-footer2 {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+ul.social-footer2 li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-footer2 li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80%;
+}
+
+ul li a img:hover {
+    background-color: #ce0033;
+}
